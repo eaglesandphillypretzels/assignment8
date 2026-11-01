@@ -15,7 +15,7 @@ You’ll use it to easily install Git, Python, Docker, etc.
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-**Verify Homebrew:**
+**Verify Homebrew:** 
 
 ```bash
 brew --version
