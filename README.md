@@ -18,7 +18,7 @@ You’ll use it to easily install Git, Python, Docker, etc.
 **Verify Homebrew:** 
 
 ```bash
-brew --version
+brew --version 
 ```
 
 If you see a version number, you're good to go.
