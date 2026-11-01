@@ -9,7 +9,7 @@
 Homebrew is a package manager for macOS.  
 You’ll use it to easily install Git, Python, Docker, etc.
 
-**Install Homebrew:**
+**Install Homebrew:** 
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
