@@ -1,3 +1,6 @@
+# DockerHub QR Code:
+qr_codes/QRCode_20261102011752.png
+
 # 📦 Project Setup
 
 ---
@@ -211,20 +214,6 @@ python main.py
 ```bash
 docker run -it --rm <image-name>
 ```
-
----
-
-# 📝 7. Submission Instructions
-
-After finishing your work:
-
-```bash
-git add .
-git commit -m "Complete Module X"
-git push origin main
-```
-
-Then submit the GitHub repository link as instructed.
 
 ---
 
