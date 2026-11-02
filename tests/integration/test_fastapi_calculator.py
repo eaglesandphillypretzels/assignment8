@@ -41,7 +41,7 @@ def test_add_api(client):
     3. Assert that the JSON response contains the correct result (`15`).
     """
     # Send a POST request to the '/add' endpoint with JSON payload
-    response = client.post('/add', json={'a': 10, 'b': 5})
+    response = client.post('/add', json={'a': 10, 'b': 5, 'c': 0})
     
     # Assert that the response status code is 200 (OK)
     assert response.status_code == 200, f"Expected status code 200, got {response.status_code}"
@@ -66,7 +66,7 @@ def test_subtract_api(client):
     3. Assert that the JSON response contains the correct result (`5`).
     """
     # Send a POST request to the '/subtract' endpoint with JSON payload
-    response = client.post('/subtract', json={'a': 10, 'b': 5})
+    response = client.post('/subtract', json={'a': 10, 'b': 5, 'c': 0})
     
     # Assert that the response status code is 200 (OK)
     assert response.status_code == 200, f"Expected status code 200, got {response.status_code}"
@@ -91,7 +91,7 @@ def test_multiply_api(client):
     3. Assert that the JSON response contains the correct result (`50`).
     """
     # Send a POST request to the '/multiply' endpoint with JSON payload
-    response = client.post('/multiply', json={'a': 10, 'b': 5})
+    response = client.post('/multiply', json={'a': 10, 'b': 5, 'c': 1})
     
     # Assert that the response status code is 200 (OK)
     assert response.status_code == 200, f"Expected status code 200, got {response.status_code}"
@@ -116,7 +116,7 @@ def test_divide_api(client):
     3. Assert that the JSON response contains the correct result (`5`).
     """
     # Send a POST request to the '/divide' endpoint with JSON payload
-    response = client.post('/divide', json={'a': 10, 'b': 2})
+    response = client.post('/divide', json={'a': 10, 'b': 2, 'c': 1})
     
     # Assert that the response status code is 200 (OK)
     assert response.status_code == 200, f"Expected status code 200, got {response.status_code}"
@@ -141,7 +141,7 @@ def test_divide_by_zero_api(client):
     3. Assert that the JSON response contains an 'error' field with the message "Cannot divide by zero!".
     """
     # Send a POST request to the '/divide' endpoint with JSON payload attempting division by zero
-    response = client.post('/divide', json={'a': 10, 'b': 0})
+    response = client.post('/divide', json={'a': 10, 'b': 0,'c': 1})
     
     # Assert that the response status code is 400 (Bad Request), indicating an error occurred
     assert response.status_code == 400, f"Expected status code 400, got {response.status_code}"
