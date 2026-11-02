@@ -1,5 +1,5 @@
-# DockerHub QR Code:
-![DockerHub Repo](qr_codes/QRCode_20261102013048.png "My QR Code Link")
+# DockerHub Link
+[DockerHub Repo](https://hub.docker.com/repository/docker/badgirljoyjoy/601_module8/general)
 
 # 📦 Project Setup
 
