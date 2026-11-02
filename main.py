@@ -67,7 +67,7 @@ async def read_root(request: Request):
 @app.post("/add", response_model=OperationResponse, responses={400: {"model": ErrorResponse}})
 async def add_route(operation: OperationRequest):
     """
-    Add two numbers.
+    Add three numbers.
     """
     try:
         result = add(operation.a, operation.b, operation.c)
@@ -79,7 +79,7 @@ async def add_route(operation: OperationRequest):
 @app.post("/subtract", response_model=OperationResponse, responses={400: {"model": ErrorResponse}})
 async def subtract_route(operation: OperationRequest):
     """
-    Subtract two numbers.
+    Subtract three numbers.
     """
     try:
         result = subtract(operation.a, operation.b, operation.c)
@@ -91,7 +91,7 @@ async def subtract_route(operation: OperationRequest):
 @app.post("/multiply", response_model=OperationResponse, responses={400: {"model": ErrorResponse}})
 async def multiply_route(operation: OperationRequest):
     """
-    Multiply two numbers.
+    Multiply three numbers.
     """
     try:
         result = multiply(operation.a, operation.b, operation.c)
@@ -103,7 +103,7 @@ async def multiply_route(operation: OperationRequest):
 @app.post("/divide", response_model=OperationResponse, responses={400: {"model": ErrorResponse}})
 async def divide_route(operation: OperationRequest):
     """
-    Divide two numbers.
+    Divide three numbers.
     """
     try:
         result = divide(operation.a, operation.b, operation.c)
