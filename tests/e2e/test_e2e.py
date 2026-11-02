@@ -7,7 +7,7 @@ from playwright.sync_api import expect  # Import the Expect class from Playwrigh
 @pytest.mark.e2e
 def test_hello_world(page, fastapi_server):
     """
-    Test that the homepage displays "nyann :3 ദ്ദി◝ ⩊ ◜.ᐟ" in the main header.
+    Test that the homepage displays "nyannn :3 ദ്ദി◝ ⩊ ◜.ᐟ" in the main header.
 
     This test verifies that when a user navigates to the homepage of the application,
     the main header (`<h1>`) correctly displays the text "Hello World". This ensures
