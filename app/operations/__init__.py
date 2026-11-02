@@ -44,8 +44,7 @@ def add(a: Number, b: Number, c: Number)-> Number:
     9
     """
     # Perform addition of a, b, and c
-    result = a + b + c
-    return result
+    return a + b + c
 
 def subtract(a: Number, b: Number, c: Number) -> Number:
     """
@@ -68,8 +67,8 @@ def subtract(a: Number, b: Number, c: Number) -> Number:
     1
     """
     # Perform subtraction of b from a
-    result = a - b - c
-    return result
+    return a - b - c
+
 
 def multiply(a: Number, b: Number, c: Number) -> Number:
     """
@@ -92,8 +91,7 @@ def multiply(a: Number, b: Number, c: Number) -> Number:
     24
     """
     # Perform multiplication of a, b, and c
-    result = a * b * c
-    return result
+    return a * b * c
 
 def divide(a: Number, b: Number, c: Number) -> float:
     """
@@ -128,5 +126,4 @@ def divide(a: Number, b: Number, c: Number) -> float:
         raise ValueError("Cannot divide by zero!")
     
     # Perform division of a by b and return the result as a float
-    result = a / b / c  
-    return result
+    return a / b / c 
