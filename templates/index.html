@@ -24,7 +24,7 @@
         This information is not displayed directly on the web page.
     -->
    <body bgcolor="ffddf4">
-     
+
     <meta charset="UTF-8">
     <!--
         <meta> Tag: Character Set
@@ -263,6 +263,9 @@
             // Retrieve the value of the second input field (ID: 'b') and parse it as a float
             const b = parseFloat(document.getElementById('b').value);
             
+            // Retrieve the value of the third input field (ID: 'c') and parse it as a float
+            const c = parseFloat(document.getElementById('c').value);
+
             // Get the <div> element where the result or error message will be displayed
             const resultElement = document.getElementById('result');
     
@@ -278,13 +281,13 @@
                     - headers: { 'Content-Type': 'application/json' }: Sets the 'Content-Type' header to 'application/json',
                       informing the server that the request body contains JSON data.
                       
-                    - body: JSON.stringify({ a: a, b: b }): Converts the JavaScript object { a: a, b: b } into a JSON string
+                    - body: JSON.stringify({ a: a, b: b, c: c }): Converts the JavaScript object { a: a, b: b, c: c } into a JSON string
                       to be sent in the request body.
                 */
                 const response = await fetch('/' + operation, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ a: a, b: b })
+                    body: JSON.stringify({ a: a, b: b, c: c })
                 });
                 
                 // Await and parse the response as JSON
