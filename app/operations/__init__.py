@@ -23,7 +23,7 @@ from typing import Union  # Import Union for type hinting multiple possible type
 # Define a type alias for numbers that can be either int or float
 Number = Union[int, float]
 
-def add(a: Number, b: Number, c: Number = 0) -> Number:
+def add(a: Number, b: Number, c: Number) -> Number:
     """
     Add three numbers and return the result.
 
@@ -47,7 +47,7 @@ def add(a: Number, b: Number, c: Number = 0) -> Number:
     result = a + b + c
     return result
 
-def subtract(a: Number, b: Number, c: Number = 0) -> Number:
+def subtract(a: Number, b: Number, c: Number) -> Number:
     """
     Subtract the second number from the first and return the result.
 
@@ -71,7 +71,7 @@ def subtract(a: Number, b: Number, c: Number = 0) -> Number:
     result = a - b - c
     return result
 
-def multiply(a: Number, b: Number, c: Number = 1) -> Number:
+def multiply(a: Number, b: Number, c: Number) -> Number:
     """
     Multiply three numbers and return the product.
 
@@ -95,7 +95,7 @@ def multiply(a: Number, b: Number, c: Number = 1) -> Number:
     result = a * b * c
     return result
 
-def divide(a: Number, b: Number, c: Number = 1) -> float:
+def divide(a: Number, b: Number, c: Number) -> float:
     """
     Divide the first number by the second and return the quotient.
 
@@ -117,7 +117,7 @@ def divide(a: Number, b: Number, c: Number = 1) -> float:
     2.75
     >>> divide(5, 3, 2)
     0.8333333333333334
-    >>> divide(5, 0)
+    >>> divide(5, 0, 1)
     Traceback (most recent call last):
         ...
     ValueError: Cannot divide by zero!
