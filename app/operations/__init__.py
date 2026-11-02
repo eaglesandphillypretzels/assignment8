@@ -125,5 +125,5 @@ def divide(a: Number, b: Number, c: Number) -> float:
         # Raise a ValueError with a descriptive message
         raise ValueError("Cannot divide by zero!")
     
-    # Perform division of a by b and return the result as a float
+    # Perform division of a by b by c and return the result as a float
     return (a / b) / c 
