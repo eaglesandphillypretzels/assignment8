@@ -1,5 +1,5 @@
 # DockerHub QR Code:
-qr_codes/QRCode_20261102011752.png
+![DockerHub Repo](qr_codes/QRCode_20261102011752.png "My QR Code Link")
 
 # 📦 Project Setup
 
