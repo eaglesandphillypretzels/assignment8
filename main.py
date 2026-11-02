@@ -22,11 +22,12 @@ templates = Jinja2Templates(directory="templates")
 class OperationRequest(BaseModel):
     a: float = Field(..., description="The first number")
     b: float = Field(..., description="The second number")
+    c: float = Field(0, description="The third number (optional, default is 0)")
 
-    @field_validator('a', 'b')  # Correct decorator for Pydantic 1.x
+    @field_validator('a', 'b', 'c')  # Correct decorator for Pydantic 1.x
     def validate_numbers(cls, value):
         if not isinstance(value, (int, float)):
-            raise ValueError('Both a and b must be numbers.')
+            raise ValueError('All parameters must be numbers.')
         return value
 
 # Pydantic model for successful response
@@ -69,7 +70,7 @@ async def add_route(operation: OperationRequest):
     Add two numbers.
     """
     try:
-        result = add(operation.a, operation.b)
+        result = add(operation.a, operation.b, operation.c)
         return OperationResponse(result=result)
     except Exception as e:
         logger.error(f"Add Operation Error: {str(e)}")
@@ -81,7 +82,7 @@ async def subtract_route(operation: OperationRequest):
     Subtract two numbers.
     """
     try:
-        result = subtract(operation.a, operation.b)
+        result = subtract(operation.a, operation.b, operation.c)
         return OperationResponse(result=result)
     except Exception as e:
         logger.error(f"Subtract Operation Error: {str(e)}")
@@ -93,7 +94,7 @@ async def multiply_route(operation: OperationRequest):
     Multiply two numbers.
     """
     try:
-        result = multiply(operation.a, operation.b)
+        result = multiply(operation.a, operation.b, operation.c)
         return OperationResponse(result=result)
     except Exception as e:
         logger.error(f"Multiply Operation Error: {str(e)}")
@@ -105,7 +106,7 @@ async def divide_route(operation: OperationRequest):
     Divide two numbers.
     """
     try:
-        result = divide(operation.a, operation.b)
+        result = divide(operation.a, operation.b, operation.c)
         return OperationResponse(result=result)
     except ValueError as e:
         logger.error(f"Divide Operation Error: {str(e)}")
