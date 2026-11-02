@@ -231,7 +231,7 @@ def test_divide_by_zero() -> None:
     # Use pytest's context manager to check for a ValueError when dividing by zero
     with pytest.raises(ValueError) as excinfo:
         # Attempt to divide 6 by 0, which should raise a ValueError
-        divide(6, 0, 1)
+        divide(0, 5, 0)
     
     # Assert that the exception message contains the expected error message
     assert "Cannot divide by zero!" in str(excinfo.value), \
