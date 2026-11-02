@@ -1,5 +1,5 @@
-# DockerHub Link
-[DockerHub Repo](https://hub.docker.com/repository/docker/badgirljoyjoy/601_module8/general)
+# DockerHub Image
+[DockerHub Image](https://hub.docker.com/repository/docker/badgirljoyjoy/601_module8/general)
 
 # 📦 Project Setup
 
