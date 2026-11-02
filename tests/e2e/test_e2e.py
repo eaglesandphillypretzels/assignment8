@@ -18,7 +18,7 @@ def test_hello_world(page, fastapi_server):
     
     # Use an assertion to check that the text within the first <h1> tag is exactly "Hello World".
     # If the text does not match, the test will fail.
-    expect(page.locator('h1')).to_have_text('nyann :3 ദ്ദി◝ ⩊ ◜.ᐟ')
+    expect(page.locator('h1')).to_have_text('nyannn :3 ദ്ദി◝ ⩊ ◜.ᐟ')
 
 @pytest.mark.e2e
 def test_calculator_add(page, fastapi_server):
