@@ -165,10 +165,10 @@ def test_multiply(a: Number, b: Number, c: Number, expected: Number) -> None:
 @pytest.mark.parametrize(
     "a, b, c, expected",
     [
-        (6, 3, 2.0, 0),       # Test dividing two positive integers
-        (-6, 3, -2.0, 0),         # Test dividing a negative integer by a positive integer
-        (6.0, 3.0, 2.0, 0),       # Test dividing two positive floats
-        (-6.0, 3.0, -2.0, 0),     # Test dividing a negative float by a positive float
+        (6, 3, 2.0, 1.0),       # Test dividing two positive integers
+        (-6, 3, -2.0, 1.0),         # Test dividing a negative integer by a positive integer
+        (6.0, 3.0, 2.0, 1.0),       # Test dividing two positive floats
+        (-6.0, 3.0, -2.0, 1.0),     # Test dividing a negative float by a positive float
         (0, 5, 0.0, 0),            # Test dividing zero by a positive integer
     ],
     ids=[
